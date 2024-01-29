@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="main2">
+    <div id="main">
+        <div class="container">
+            <nav>
+                <div class="logo" ><img src="/portfolio2/images/logo3.png" height="80px" ></div>
+                <ul>
+                    <li><a href="main">Home</a></li>
+                    <li><a href="">Contact</a></li>
+                    <li><a href="">About</a></li>
+                </ul>
+            </nav>
+            <div class="introtext">
+                <h1>Hi, I'm <span>Nimesh</span> <br>Sharma  from <br>India</h1>
+            </div>
+        </div>
+        
+    </div>
+    <!-- -----------------------about---------------------- -->
+    <div id="aboutme">
+            <div id="row"> 
+                <div id="left">
+                    <img  src="/portfolio2/images/profile3.jpeg" alt="">
+                </div>
+                <div id="right">
+                    <h1>About me</h1>
+                    <p id="desc">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laborum illo quaerat, provident officiis voluptates, impedit esse vel molestias odio porro quae sint? In distinctio ipsum neque minus tenetur, incidunt quam!</p>
+                    <div class="tab-title">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    </div>
+                    <div class="tab-content active-tab" id="skills"><ul>
+                        <li><span>Core Java</span><br>Data Structure and Algorithm <br>Object Oriented Programmings</li>
+                        <li><span>Frontend</span><br>HTML, CSS <br>JavaScript, React</li>
+                    </ul></div>
+                    <div class="tab-content" id="education"><ul>
+                        <li><span>SRM Institute of Science and Technology(2023)</span><br>B.Tech. (Computer Science) </li>
+                        <li><span>KL International School</span><br>12th(2019) ,10th(2017)</li>
+                    </ul></div>
+                    <div class="tab-content" id="experience"><ul>
+                        <li><span>CodSoft Intern(2023)</span><br>Web Development </li>
+                        
+                    </ul></div>
+                </div>
+            </div>      
+        
+    </div>
+    <!-- -----------------------contact---------------------- -->
+    <div id="contact">
+        
+        <div id="row-contact">
+            <div id="contact-left">
+                <h1>Contact me-</h1>
+                <p><i class="ri-mail-send-fill"></i> nimesh9528@gmail.com</p>
+                <p><i class="ri-phone-fill"></i> +91 9528847944</p>
+                <div id="social">
+                    <a href="https://www.facebook.com/profile.php?id=100005264386129"><i class="ri-facebook-box-fill"></i></a>
+                        <a href="https://www.linkedin.com/in/nimesh-sharma-429a47203/"><i class="ri-linkedin-box-fill"></i></a>
+                        <a href="https://www.instagram.com/_n.i.m.e.s.h_/"><i class="ri-instagram-fill"></i></a>
+                        <a href="https://github.com/nimesh9528"><i class="ri-github-fill"></i></a>
+                </div>
+                <a href="/portfolio2/NimeshSharma_Resume.pdf" download class="btn btn2">Download Resume</a>
+            </div>
+            <div  id="contact-right">
+                <form >
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message"  rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+            </div>
+        </div>
+        <div id="footer">
+            <p>Made with <i class="ri-heart-fill"></i> by <i class="ri-copyright-line"></i> Nimesh.</p>          
+        </div>
+    </div>
+</div>
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-content");
+
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+
+
+        }
+    </script>
+</body>
+</html>
