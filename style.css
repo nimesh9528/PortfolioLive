@@ -243,7 +243,7 @@ form .btn2{
 }
 #footer{
     width: 100%;
-    background: #3e3c3c;
+    background: #645f5f;
     justify-content: center;
     align-items: center;
     padding: 30px;
@@ -251,9 +251,9 @@ form .btn2{
     font-size: 20px;
 }
 .ri-heart-fill{
-    color: rgb(193, 38, 38);
+    color: rgb(162, 54, 54);
 }
-
+/*-------------------------------------media -----------------  */
 @media(max-width: 600px){
     .introtext h1{
         font-size: 3rem;
